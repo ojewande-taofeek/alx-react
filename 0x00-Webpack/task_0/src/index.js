@@ -1,6 +1,6 @@
 import $ from "jquery";
 $(document).ready(function(){
-    $("#p1").text("Holberton Dashboard");
-    $("#p2").text("Dashboard data for the students");
-    $("#p3").text("Copyright - Holberton School");
+    $("body").append($("<p></p>").text("Holberton Dashboard"));
+    $("body").append($("<p></p>").text("Dashboard data for the students"));
+    $("body").append($("<p></p>").text("Copyright - Holberton School"));
 });
