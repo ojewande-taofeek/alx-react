@@ -1,6 +1,5 @@
 import $ from 'jquery';
-
-const debounce = require('lodash/debounce');
+import _ from 'lodash';
 
 $(document).ready(function() {
     $('body').append("<p>Holberton Dashboard</p>");
@@ -14,5 +13,5 @@ $(document).ready(function() {
         counter++;
         $('#count').text(counter + " clicks on the button");
     });
-    debounce(updateCounter, 300);
+    _.debounce(updateCounter, 300);
 });
