@@ -1,34 +1,38 @@
+const path = require('path');
+
 module.exports = {
     mode: 'production',
-    entry: ['./js/dashboard_main.js', './assets/holberton-logo.jpg'],
+    entry: {
+        main: path.resolve(__dirname, './js/dashboard_main.js'),
+    },
     output: {
         filename: 'bundle.js',
-        path: __dirname +  '/public',
+        path: path.resolve(__dirname, 'public'),
     },
-    performance: {
-        hints: false,
-        maxEntrypointSize: 512000,
-        maxAssetSize: 512000,
-     },
     module: {
-        rules: [
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+            'file-loader',
             {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader"]
+            loader: 'image-webpack-loader',
+            options: {
+                bypassOnDebug: true, // webpack@1.x
+                disable: true, // webpack@2.x and newer
             },
-           {
-                test: /\.(gif|png|jpe?g|svg)$/i,
-                use: [
-                        'file-loader',
-                        {
-                        loader: 'image-webpack-loader',
-                        options: {
-                            bypassOnDebug: true, // webpack@1.x
-                            disable: true, // webpack@2.x and newer
-                        },
-                        },
-                    ],
-            } 
-        ]
-    },
+            },
+        ],
+        }
+    ],
+  },
+   performance: {
+    hints: false,
+    maxAssetSize: 512000,
+    maxEntrypointSize: 512000,
+  },
 };
