@@ -42,6 +42,7 @@ module.exports = {
     maxEntrypointSize: 512000,
   },
   devServer: {
+    contentBase: './public',
     port: 8564,
   },
   plugins: [
@@ -50,7 +51,7 @@ module.exports = {
   ],
     optimization: {
     splitChunks: {
-      chunks: 'async',
+      chunks: 'all',
       minSize: 20000,
       minRemainingSize: 0,
       minChunks: 1,
