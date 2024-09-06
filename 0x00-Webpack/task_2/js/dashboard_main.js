@@ -1,3 +1,4 @@
+import '../css/main.css';
 import $ from 'jquery';
 import _ from 'lodash';
 
@@ -12,7 +13,7 @@ $(document).ready(function() {
     let counter = 0;
     function updateCounter() {
         counter++;
-        $('#count').text(` ${counter} clicks on the button`);
+        $('#count').text(`${counter} clicks on the button`);
     };
     $('button').on('click', _.debounce(updateCounter, 500));
 });
