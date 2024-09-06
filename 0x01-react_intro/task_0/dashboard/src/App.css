@@ -1,0 +1,56 @@
+.App {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.App-header {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  color: #D73953;
+}
+
+.Header-title {
+  text-align: center;
+  padding-top: 70px;
+  margin-left: 0;
+}
+
+.Header-logo {
+  width: 12rem;
+  height: 12rem;
+}
+
+.App-body {
+  height: 60%;
+}
+
+
+
+.Body-para {
+  padding-top: 40px;
+  padding-left: 30px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.App-footer {
+  position: absolute;
+  left:0px;
+  bottom:0px;
+  height:10%;
+  width:100%;
+}
+
+.Body-divider,
+.Footer-divider {
+  border: none;
+  height: 3px;
+  background-color: #D73953;
+}
+
+.Footer-para {
+  font-style: italic;
+  text-align: center;
+}
+
