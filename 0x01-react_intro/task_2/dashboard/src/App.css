@@ -1,0 +1,39 @@
+.App {
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App-header {
+  color: #D73953;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #D73953;
+  height: 35%;
+}
+
+.h-logo {
+  height: 200px;
+  width: 200px;
+}
+
+
+.App-body {
+  height: 60%;
+  border-bottom: 3px solid #D73953;
+  padding: 15px;
+}
+
+
+.App-footer {
+  width: 100%;
+  height: 5%;
+  font-style: italic;
+  position: absolute;
+  text-align: center;
+}
+
+
+.footer-school-name {
+  display: inline;
+}
