@@ -14,9 +14,9 @@ function App() {
         <p className="body-para">Login to access the full dashboard</p>
         <form>
           <label for="mail">Email: </label>
-          <input type="email" id="mail" /><br/><br />
-          <label for="password">Password: </label>
-          <input type="password" id="password" /> <br /><br />
+          <input type="email" id="mail" />
+          <label for="password">   Password: </label>
+          <input type="password" id="password" />
           <button>OK</button>
         </form>
       </div>
