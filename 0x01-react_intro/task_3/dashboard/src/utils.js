@@ -5,10 +5,8 @@ export function getFullYear() {
 
 export function getFooterCopy(isIndex) {
     return (
-        <div className="footer-school-name">
-        {isIndex ? 'Holberton School' : 'Holberton School main dashboard'
-    }
-    </div>)
+        isIndex ? 'Holberton School' : 'Holberton School main dashboard'
+    );
 }
 
 export function getLatestNotification() {
