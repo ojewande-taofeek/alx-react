@@ -1,0 +1,23 @@
+.Notifications {
+    padding: 0.5em;
+    padding-top: 0;
+    border: 1px dashed #D73953;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    height: 18%;
+    margin: auto;
+}
+
+li[data="default"] {
+    color: blue;
+}
+
+li[data="urgent"] {
+    color: red;
+}
+
+.NoteC {
+    position: absolute;
+    top: 0px;
+}
