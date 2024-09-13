@@ -1,0 +1,14 @@
+.App-footer {
+  font-style: italic;
+  width: 95%;
+  position: absolute;
+  text-align: center;
+  border-top: 3px solid #D73953;
+  top: 700px;
+  margin: auto;
+}
+
+
+.footer-school-name {
+  display: inline;
+}
