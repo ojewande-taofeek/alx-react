@@ -3,10 +3,6 @@
     font-weight: bold;
 }
 
-#count::before {
-    content: " ";
-}
-
 #logo {
     background-image: url('../assets/holberton-logo.jpg');
     width: 200px;
