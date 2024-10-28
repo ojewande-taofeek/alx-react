@@ -3,7 +3,7 @@ import _ from "lodash";
 import "../css/main.css";
 
 $(function() {
-    $('body').append('<img id="logo" src="../assets/holberton-logo.jpg" width="200px" height="200px" loading="lazy">');
+    $('body').append('<img id="logo" width="200px" height="200px" loading="lazy">');
     $('body').append('<p>Holberton Dashboard</p>');
     $('body').append('<p>Dashboard data for the students</p>');
     $('body').append('<button>Click here to get started</button>');
