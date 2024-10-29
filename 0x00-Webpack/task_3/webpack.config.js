@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -21,11 +22,10 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: '[name].bundle.js',
-        clean: true,
     },
     optimization: {
         splitChunks: {
-       chunks: 'all',
+        chunks: 'all',
      },
     },
     devServer: {
@@ -36,7 +36,8 @@ module.exports = {
     plugins: [new HtmlWebpackPlugin(
         {
             filename: "index.html",
-        })
+        }),
+        new CleanWebpackPlugin(),
     ],
     devtool: 'inline-source-map',
     module: {
