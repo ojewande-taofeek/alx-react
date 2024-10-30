@@ -1,0 +1,11 @@
+.Notifications {
+    border: 0.1rem dotted red;
+    padding: 0.5rem;
+    width: 95%;
+    height: 12vh;
+    margin: auto;
+}
+
+.Notifications p {
+    margin: 0.5rem 0;
+}
