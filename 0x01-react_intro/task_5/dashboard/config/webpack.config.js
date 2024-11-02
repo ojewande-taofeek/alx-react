@@ -1,27 +1,27 @@
 const path = require('path');
 
 module.exports = {
-    entry: {
-        path: path.resolve(__dirname, '../src/index.js'),
-    },
+    entry: './src/index.js',
+    
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename: 'bundle.js',
     },
     mode: "development",
-    devtool: "in-line-source-map",
+    devtool: "inline-source-map",
     devServer: {
         static: {
             directory: path.join(__dirname, '../dist'),
         },
             port: 3000,
+            open: true,
             hot: true,
         },
     module: {
         rules: [ 
             { test: /\.css$/i, use: ['style-loader', 'css-loader'] },
-                { test: /\.(gif|png|jpe?g|svg)$/i, type: "asset/resource",
-                      use: [
+                { test: /\.(gif|png|jpe?g|svg)$/i, 
+                      use: [ 'file-loader',
                  {
                    loader: 'image-webpack-loader',
               options: {
