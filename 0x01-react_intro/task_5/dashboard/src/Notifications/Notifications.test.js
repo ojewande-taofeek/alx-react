@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Notifications from "../Notifications";
+import Notifications from "./Notifications";
 import { render, screen, within } from '@testing-library/react';
 
 describe('Tests the components in Notifications.js', ()=> {
