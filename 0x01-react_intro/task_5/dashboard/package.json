@@ -4,23 +4,31 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack serve --mode=development --config ./config/webpack.config.js"
+    "serve": "webpack serve --mode=development --config ./config/webpack.config.js",
+    "build": "webpack --mode=development --config ./config/webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/preset-react": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-arrow-functions": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "source-map-loader": "^5.0.0",
+    "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
     "image-webpack-loader": "^8.1.0",
-    "source-map-loader": "^5.0.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
+    "@babel/runtime": "^7.26.0",
+    "inline-source-map": "^0.6.3",
     "jquery": "^3.7.1",
     "lodash": "^4.17.21"
   }

@@ -16,12 +16,17 @@ module.exports = {
         hot: true,
     },
     devtool: "inline-source-map",
+    resolve: {
+        extensions: [".*", ".js", ".jsx"],
+    },
      module: {
         rules: [
-          {
-            test: /\.js$/,
-            enforce: "pre",
-            use: ["source-map-loader"],
+            {
+            test: /\.(js|jsx)$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+            }
           },
           {
             test: /\.css$/i,
