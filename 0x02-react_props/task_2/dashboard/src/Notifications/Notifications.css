@@ -1,0 +1,21 @@
+.Notifications {
+    border: 0.1rem dotted red;
+    padding: 0.5rem;
+    width: 95%;
+    height: 16vh;
+    margin: auto;
+}
+
+.Notifications p {
+    margin: 0.1rem 0 0 0;
+}
+
+[data-notification-type="topPriority"] {
+    color: red;
+    font-weight: bold;
+}
+
+[data-notification-type="defaultPriority"] {
+    color: blue;
+    font-weight: bold;
+}
