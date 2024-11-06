@@ -9,24 +9,25 @@ import CourseList from '../CourseList/CourseList';
 import { getLatestNotification } from '../utils/utils';
 
 class App extends Component {
-  listCourses = [{id: 1, name: 'ES6', credit: 60}, 
+  
+  
+  render() {
+    const listCourses = [{id: 1, name: 'ES6', credit: 60}, 
                         {id: 2, name: 'Webpack', credit: 20},
                         {id: 3, name: 'React', credit: 40},
                     ]
 
-  listNotifications = [{id:1, type: "default", value: "New course available"},
+    const listNotifications = [{id:1, type: "default", value: "New course available"},
                             {id:2, type: "top", value: "New resume available"},
                              {id:3, html: {__html: getLatestNotification()}, type: "default"},
                           ]
-  
-  render() {
     const { isLoggedIn } = this.props;
     return (
              <div>
-               <Notifications displayDrawer={true} listNotifications={this.listNotifications} />
+               <Notifications displayDrawer={true} listNotifications={listNotifications} />
              <div className="App">
                <Header />
-               {isLoggedIn ? <CourseList listCourses={this.listCourses}/> : <Login />}
+               {isLoggedIn ? <CourseList listCourses={listCourses}/> : <Login />}
                <Footer />
              </div>
              </div>
