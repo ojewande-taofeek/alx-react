@@ -20,12 +20,13 @@ class App extends Component {
                           ]
   
   render() {
+    const { isLoggedIn } = this.props;
     return (
              <div>
                <Notifications displayDrawer={true} listNotifications={this.listNotifications} />
              <div className="App">
                <Header />
-               {this.props.isLoggedIn ? <CourseList listCourses={this.listCourses}/> : <Login />}
+               {isLoggedIn ? <CourseList listCourses={this.listCourses}/> : <Login />}
                <Footer />
              </div>
              </div>
