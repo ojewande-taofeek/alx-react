@@ -8,7 +8,7 @@ export default function Login(){
                   <p>Login to access the full dashboard</p>
                   <form>
                       <label htmlFor="email">Email:</label>
-                      <input type="email" id="email" />
+                      <input type="email" id="email" autoComplete='true'/>
                       <label htmlFor="password">Password:</label>
                       <input type="password" id="password" />
                       <button>OK</button>

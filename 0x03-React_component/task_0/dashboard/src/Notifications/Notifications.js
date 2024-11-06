@@ -7,7 +7,7 @@ import NotificationItem from './NotificationItem';
 import PropTypes from 'prop-types';
 import NotificationItemShape from './NotificationItemShape';
 
-export default function Notifications({displayDrawer = false, listNotifications = []}) {
+export default function Notifications({displayDrawer, listNotifications = []}) {
     const [ count, useCount ] = useState(1);
     function handleClick() {
         useCount(count + 1);
