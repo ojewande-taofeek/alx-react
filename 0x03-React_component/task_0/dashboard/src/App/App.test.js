@@ -2,8 +2,6 @@ import App from './App';
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
 
-
-
 describe("Tests the component in App.js", ()=> {
     it("test that App renders without crashing", ()=> {
         render(<App />);
