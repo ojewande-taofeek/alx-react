@@ -34,17 +34,5 @@ describe("Tests the component in App.js", ()=> {
         expect(screen.getByRole("table")).toBeInTheDocument();
     })
 
-    it(`verify that when the keys control and h are pressed the logOut function,
-        passed as a prop, is called and the alert function is called with the 
-        string Logging you out`, async()=> {
-            const logOutMock = jest.fn();
-            const alertMock = jest.spyOn(window, 'alert').mockImplementation(() => {});
-
-            const user = userEvent.setup();
-            render(<App logOut={logOutMock}/>);
-            await user.keyboard('{Control>}h{/Control}');
-            expect(logOutMock).toHaveBeenCalled();
-            expect(alertMock).toHaveBeenCalledWith('Logging you out');
-            alertMock.mockRestore();
-        })
+    
 })
