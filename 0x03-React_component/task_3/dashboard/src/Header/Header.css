@@ -1,0 +1,22 @@
+.App-header {
+  border-bottom: 3px solid  #d73953;
+  color: #d73953;
+  position: absolute;
+  top: 6rem;
+  display: flex;
+  width: 100%;
+  height: 16vh;
+}
+
+.App-header img {
+  height: 180%;
+  position: absolute;
+  top: -5rem;
+}
+
+.App-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-left: 15rem;
+}

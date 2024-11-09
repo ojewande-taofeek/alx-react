@@ -1,0 +1,17 @@
+.App-body {
+  position: absolute;
+  top: 11rem;
+
+}
+
+.App-body p {
+  margin-left: 2rem;
+}
+
+.form {
+  margin-top: 1rem;
+}
+
+input {
+ margin: 0 0.5rem;
+}
