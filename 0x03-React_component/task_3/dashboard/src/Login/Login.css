@@ -1,11 +1,11 @@
 .App-body {
-  position: absolute;
-  top: 11rem;
+  position: relative;
+  bottom: 1rem;
 
 }
 
 .App-body p {
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .form {

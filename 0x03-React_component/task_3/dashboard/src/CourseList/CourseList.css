@@ -1,8 +1,7 @@
 table {
     width: 80%;
-    position: absolute;
-    top: 13rem;
-    margin: auto;
+    position: relative;
+    margin: 0.1rem 0 0 2rem;
 }
 
 table,
