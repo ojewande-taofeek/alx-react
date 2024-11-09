@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import Login from '../Login/Login';
 import Footer from '../Footer/Footer';
 import CourseList from '../CourseList/CourseList';
+import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBottom';
 import { getLatestNotification } from '../utils/utils';
 
 class App extends Component {
@@ -49,7 +50,11 @@ class App extends Component {
                <Notifications displayDrawer={true} listNotifications={listNotifications} />
              <div className="App">
                <Header />
-               {isLoggedIn ? <CourseList listCourses={listCourses}/> : <Login />}
+               {isLoggedIn ?
+                <BodySectionWithMarginBottom title="Course list">
+                    <CourseList listCourses={listCourses}/> 
+                </BodySectionWithMarginBottom>
+                : <Login />}
                <Footer />
              </div>
              </div>
