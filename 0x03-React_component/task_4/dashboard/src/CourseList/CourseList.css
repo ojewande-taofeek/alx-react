@@ -1,0 +1,22 @@
+table {
+    width: 80%;
+    position: relative;
+    margin: 0.1rem 0 0 2rem;
+}
+
+table,
+th {
+    border: 0.1rem solid gray;
+    border-collapse: collapse;
+}
+
+
+thead {
+    color: black;
+    font-weight: bold;
+}
+
+tbody {
+    color:rgb(84, 26, 26);
+}
+
