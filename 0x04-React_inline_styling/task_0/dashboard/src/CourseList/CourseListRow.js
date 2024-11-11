@@ -11,18 +11,20 @@ const headerBgC = {
 };
 
 export default function CourseListRow({isHeader = false, textFirstCell, textSecondCell = null}) {
+     const rowStyle = isHeader ? headerBgC : rowBgC;
     return(
-        <tr style={rowBgC}>
-            {isHeader && !textSecondCell && (
-                <th colSpan={2} style={headerBgC}>{textFirstCell}</th>
-                )}
-            {isHeader && textSecondCell && (
+        <tr style={rowStyle}>
+            {isHeader ?
+                textSecondCell === null ? (
+                <th colSpan={2}>{textFirstCell}</th>
+                ) : (
                 <>
-                    <th style={headerBgC}>{textFirstCell}</th>
-                    <th style={headerBgC}>{textSecondCell}</th>
+                    <th>{textFirstCell}</th>
+                    <th>{textSecondCell}</th>
                 </>
-                )}
-            {!(isHeader) && (
+                ) 
+            
+                : (
                 <>
                     <td>{textFirstCell}</td>
                     {textSecondCell && <td>{textSecondCell}</td>}
