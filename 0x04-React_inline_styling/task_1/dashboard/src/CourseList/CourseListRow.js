@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 const rowBgC = {
     backgroundColor: '#f5f5f5ab',
 };

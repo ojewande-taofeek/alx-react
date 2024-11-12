@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, css } from 'aphrodite';
+import './Notifications.css';
 import closeIcon from '../assets/closeIcon.png';
 import NotificationItem from './NotificationItem';
 import PropTypes from 'prop-types';
 import NotificationItemShape from './NotificationItemShape';
+import { StyleSheet, css } from 'aphrodite';
 
 
 export default class Notifications extends Component {
