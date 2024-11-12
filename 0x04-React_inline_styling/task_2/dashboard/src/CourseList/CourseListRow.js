@@ -14,7 +14,7 @@ export default function CourseListRow({isHeader = false, textFirstCell, textSeco
                 ) : (
                 <>
                     <th>{textFirstCell}</th>
-                    <th className={css(rowStyle)}>{textSecondCell}</th>
+                    <th>{textSecondCell}</th>
                 </>
                 ) 
             
