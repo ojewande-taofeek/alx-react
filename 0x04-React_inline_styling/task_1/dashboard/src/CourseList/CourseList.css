@@ -1,8 +1,0 @@
-th {
-    border: 0.1rem solid gray;
-    border-collapse: collapse;
-}
-
-tr:nth-child(2) {
-    text-align: left;
-}
