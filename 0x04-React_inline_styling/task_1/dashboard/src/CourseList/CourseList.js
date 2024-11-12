@@ -7,7 +7,7 @@ import CourseShape from './CourseShape';
 
 export default function CourseList({listCourses = []}) {
     return (
-        <table id='CourseList' className={css([tableStyles.table, tableStyles.tableBorder])}>
+        <table id='CourseList' className={css(tableStyles.table)}>
             <thead className={css(tableStyles.thead)}>
                 <CourseListRow isHeader={true} textFirstCell="Available courses" />
                 <CourseListRow isHeader={true} textFirstCell="Course name" textSecondCell="Credit" />
@@ -35,8 +35,6 @@ const tableStyles = StyleSheet.create({
         width: '80%',
         position: 'relative',
         margin: '0.1rem 0 0 2rem',
-    },
-    tableBorder: {
         border: '0.1rem solid gray',
         borderCollapse: 'collapse',
     },

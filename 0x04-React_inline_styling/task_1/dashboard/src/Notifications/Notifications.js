@@ -41,7 +41,6 @@ export default class Notifications extends Component {
                                 <NotificationItem id={notice.id} key={notice.id}
                                 type={notice.type} value={notice.value} 
                                 html={notice.html} markAsRead={this.markAsRead} 
-                                className={notice.type === "top" ? notifyStyles.top : notifyStyles['default']}
                                 />
                             ))}
                         </ul>
@@ -87,12 +86,5 @@ const notifyStyles = StyleSheet.create({
     p: {
         margin: '2.1rem 0 0 0',
     },
-    top: {
-        color: 'red',
-        fontWeight: 'bold',
-    },
-    'default': {
-        color: 'blue',
-        fontWeight: 'bold',
-    },
+    
 });

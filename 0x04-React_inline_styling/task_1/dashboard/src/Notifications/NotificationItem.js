@@ -1,13 +1,12 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { css } from 'aphrodite';
 
 export default class NotificationItem extends PureComponent {
     render() {
-        const { id, type, value, html, markAsRead, className } = this.props;
+        const { id, type, value, html, markAsRead } = this.props;
         return(
         <>
-            <li className={css(className)} data-notification-type={type} onClick={()=> markAsRead(id)} dangerouslySetInnerHTML={html || null}>{value && !html && value}</li>
+            <li data-notification-type={type} onClick={()=> markAsRead(id)} dangerouslySetInnerHTML={html || null}>{value && !html && value}</li>
         </>
     );
 }}
@@ -20,7 +19,6 @@ NotificationItem.propTypes = {
         __html: PropTypes.string,
     }),
     markAsRead: PropTypes.func,
-    className: PropTypes.object,
 };
 
 NotificationItem.defaultProps = {
