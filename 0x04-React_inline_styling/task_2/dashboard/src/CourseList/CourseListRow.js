@@ -5,7 +5,7 @@ import { StyleSheet, css } from 'aphrodite';
 
 
 export default function CourseListRow({isHeader = false, textFirstCell, textSecondCell = null}) {
-     const rowStyle = isHeader ? listStyles.headerBgC : listStyles.rowBgC;
+     const rowStyle = isHeader ? [listStyles.headerBgC, listStyles.border] : listStyles.rowBgC;
     return(
         <tr className={css(rowStyle)}>
             {isHeader ?
@@ -14,7 +14,7 @@ export default function CourseListRow({isHeader = false, textFirstCell, textSeco
                 ) : (
                 <>
                     <th>{textFirstCell}</th>
-                    <th>{textSecondCell}</th>
+                    <th className={css(listStyles.border)}>{textSecondCell}</th>
                 </>
                 ) 
             
@@ -45,6 +45,8 @@ const listStyles = StyleSheet.create({
 
     headerBgC: {
         backgroundColor: '#deb5b545',
+    },
+    border: {
         border: '0.1rem solid gray',
         borderCollapse: 'collapse',
     },
