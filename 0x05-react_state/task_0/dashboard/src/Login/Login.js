@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
-export default function Login(){
-    return(
-          <div className={css(logInStyle.appBody)}>
-                  <p className={css(logInStyle.p)}>Login to access the full dashboard</p>
-                  <form className={css(logInStyle.form)}>
-                        <span className={css(logInStyle.small)}>
-                            <label htmlFor="email" >Email:</label>
-                            <input type="email" id="email" autoComplete='true' className={css(logInStyle.input)}/>
-                        </span>
-                        <span className={css(logInStyle.small)}>
-                            <label htmlFor="password">Password:</label>
-                            <input type="password" id="password" className={css(logInStyle.input)}/>
-                        </span>
-                      <button className={css(logInStyle.button)}>OK</button>
-                  </form>
-            </div>
-    )
+export default class Login extends Component {
+    render() {
+        return(
+            <div className={css(logInStyle.appBody)}>
+                    <p className={css(logInStyle.p)}>Login to access the full dashboard</p>
+                    <form className={css(logInStyle.form)}>
+                          <span className={css(logInStyle.small)}>
+                              <label htmlFor="email" >Email:</label>
+                              <input type="email" id="email" autoComplete='true' className={css(logInStyle.input)}/>
+                          </span>
+                          <span className={css(logInStyle.small)}>
+                              <label htmlFor="password">Password:</label>
+                              <input type="password" id="password" className={css(logInStyle.input)}/>
+                          </span>
+                        <button className={css(logInStyle.button)}>OK</button>
+                    </form>
+              </div>
+      )
+    }
 }
 
 const logInStyle = StyleSheet.create({

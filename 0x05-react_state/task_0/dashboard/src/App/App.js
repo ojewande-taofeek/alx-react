@@ -123,5 +123,4 @@ const appStyle = StyleSheet.create({
   },
 });
 
-
 export default App;
