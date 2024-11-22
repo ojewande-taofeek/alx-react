@@ -13,4 +13,4 @@ const grades = {
   }
 };
 
-console.log(printBestStudents(grades).toObject());
+console.log(printBestStudents(grades));
