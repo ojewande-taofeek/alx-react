@@ -17,5 +17,3 @@ export function displayNotificationDrawer() {
 export function hideNotificationDrawer() {
     return {type: HIDE_NOTIFICATION_DRAWER};
 }
-
-console.log(hideNotificationDrawer());
