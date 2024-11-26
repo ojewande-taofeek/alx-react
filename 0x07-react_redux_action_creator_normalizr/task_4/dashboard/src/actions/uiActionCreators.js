@@ -8,11 +8,9 @@ export function logout() {
     return {type: LOGOUT};
 }
 
-
 export function displayNotificationDrawer() {
     return {type: DISPLAY_NOTIFICATION_DRAWER};
 }
-
 
 export function hideNotificationDrawer() {
     return {type: HIDE_NOTIFICATION_DRAWER};
